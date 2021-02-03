@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1579882539">
+  <File Type="PA-TCL" Name="MiniGames_Top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="MiniGames_Top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="MiniGames_Top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="MiniGames_Top.vds"/>
+  <File Type="RDS-UTIL" Name="MiniGames_Top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="MiniGames_Top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="MiniGames_Top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="MiniGames_Top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="MiniGames_Top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/DirectionReaction.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Enabler.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HexMux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LEDMux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-hjælpekode og sol/MuxDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastian.SEBASTIANBÆRBAR/Google Drev/Universitet/5. semester/Laboratoriekursus i digitale systemer/Lektion 4/VHDL-hjælpekode og sol/MuxDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1573468395"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reactions.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-hjælpekode/VGA_Core2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastian.SEBASTIANBÆRBAR/Google Drev/Universitet/5. semester/Laboratoriekursus i digitale systemer/Lektion 9/VHDL-hjælpekode/VGA_Core2.vhd"/>
+        <Attr Name="ImportTime" Val="1573024514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-hjælpekode/VGA_Driver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastian.SEBASTIANBÆRBAR/Google Drev/Universitet/5. semester/Laboratoriekursus i digitale systemer/Lektion 9/VHDL-hjælpekode/VGA_Driver.vhd"/>
+        <Attr Name="ImportTime" Val="1573024514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-hjælpekode/VGA_Top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastian.SEBASTIANBÆRBAR/Google Drev/Universitet/5. semester/Laboratoriekursus i digitale systemer/Lektion 9/VHDL-hjælpekode/VGA_Top.vhd"/>
+        <Attr Name="ImportTime" Val="1573024515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MiniGames_Top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/TheBlock/TheBlock.bd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MiniGames_Top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Basys 3 kit/Basys3_Master_VGA.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastian.SEBASTIANBÆRBAR/Google Drev/Universitet/5. semester/Digitalteknik 2/Basys 3 kit/Basys3_Master_VGA.xdc"/>
+        <Attr Name="ImportTime" Val="1571812760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

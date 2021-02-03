@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 18 11:18:25 2019
+# Process ID: 9744
+# Current directory: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/synth_1
+# Command line: vivado.exe -log MuxDisplay_V3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MuxDisplay_V3.tcl
+# Log file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/synth_1/MuxDisplay_V3.vds
+# Journal file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MuxDisplay_V3.tcl -notrace
+Command: synth_design -top MuxDisplay_V3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14440 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 674.531 ; gain = 178.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MuxDisplay_V3' [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/new/MuxDisplay_V3.vhd:52]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Hex27Segment' declared at 'C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/imports/new/Hex27Segment.vhd:34' bound to instance 'Hex27' of component 'Hex27Segment' [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/new/MuxDisplay_V3.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'Hex27Segment' [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/imports/new/Hex27Segment.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Hex27Segment' (1#1) [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/imports/new/Hex27Segment.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element scalecnt_reg was removed.  [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/new/MuxDisplay_V3.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'MuxDisplay_V3' (2#1) [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/sources_1/new/MuxDisplay_V3.vhd:52]
+WARNING: [Synth 8-3917] design MuxDisplay_V3 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[15]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[14]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[13]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[12]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[11]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[10]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[9]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[8]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[7]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[6]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[5]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[4]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[0]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[0]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 738.578 ; gain = 242.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 738.578 ; gain = 242.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 738.578 ; gain = 242.293
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MuxDisplay_V3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MuxDisplay_V3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 827.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 827.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 827.445 ; gain = 331.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 827.445 ; gain = 331.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 827.445 ; gain = 331.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 827.445 ; gain = 331.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MuxDisplay_V3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design MuxDisplay_V3 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[15]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[14]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[13]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[12]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[11]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[10]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[9]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[8]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[7]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[6]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[5]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[4]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port HexNums[0]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port dpoints[0]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[3]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[2]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[1]
+WARNING: [Synth 8-3331] design MuxDisplay_V3 has unconnected port blank[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 827.445 ; gain = 331.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 833.273 ; gain = 336.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 843.168 ; gain = 346.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 843.168 ; gain = 346.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     2|
+|4     |LUT2   |     9|
+|5     |LUT3   |     1|
+|6     |LUT4   |    26|
+|7     |FDRE   |    28|
+|8     |FDSE   |     1|
+|9     |IBUF   |     3|
+|10    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   101|
+|2     |  Hex27  |Hex27Segment |     4|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 858.969 ; gain = 273.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 858.969 ; gain = 362.684
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 879.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 65 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 879.883 ; gain = 585.633
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 879.883 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/synth_1/MuxDisplay_V3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MuxDisplay_V3_utilization_synth.rpt -pb MuxDisplay_V3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 11:19:06 2019...

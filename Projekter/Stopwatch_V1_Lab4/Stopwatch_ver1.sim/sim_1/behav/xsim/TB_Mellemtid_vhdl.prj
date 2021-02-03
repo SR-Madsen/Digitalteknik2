@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Stopwatch_ver1.srcs/sources_1/new/Lap_Time_Latch.vhd" \
+"../../../../Stopwatch_ver1.srcs/sim_1/new/TB_Mellemtid.vhd" \
+
+# Do not sort compile order
+nosort

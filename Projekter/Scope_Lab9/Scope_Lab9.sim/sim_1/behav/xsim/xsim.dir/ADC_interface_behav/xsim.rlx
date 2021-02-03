@@ -1,0 +1,12 @@
+
+{ 
+    crc :  2849178675760580276  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 4841c1c235ed434ab23dfd12db00a351 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot ADC_interface_behav xil_defaultlib.ADC_interface" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "15:06:07" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2019.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/ADC_interface_behav/xsimk.exe\"   \"xsim.dir/ADC_interface_behav/obj/xsim_0.win64.obj\" \"xsim.dir/ADC_interface_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2019.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

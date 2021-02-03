@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 13 11:28:35 2019
+# Process ID: 3088
+# Current directory: C:/Xilinx/Projekter/MiniGames_Lab10/MiniGames_Lab10.runs/impl_1
+# Command line: vivado.exe -log MiniGame_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MiniGame_Top.tcl -notrace
+# Log file: C:/Xilinx/Projekter/MiniGames_Lab10/MiniGames_Lab10.runs/impl_1/MiniGame_Top.vdi
+# Journal file: C:/Xilinx/Projekter/MiniGames_Lab10/MiniGames_Lab10.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MiniGame_Top.tcl -notrace

@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Jan 11 11:49:47 2020
+| Host         : Sebastian-uni running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MiniGames_Top_control_sets_placed.rpt
+| Design       : MiniGames_Top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    85 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |           19 |
+| No           | No                    | Yes                    |               3 |            2 |
+| No           | Yes                   | No                     |              17 |            5 |
+| Yes          | No                    | No                     |              21 |            9 |
+| Yes          | No                    | Yes                    |              26 |           10 |
+| Yes          | Yes                   | No                     |              91 |           40 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------+------------------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal           |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------+------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | VGACore/vs_buffer_i_1_n_0         |                                          |                1 |              1 |
+|  clk_IBUF_BUFG | Reaction_game/CompareCounter0_0   |                                          |                1 |              1 |
+|  clk_IBUF_BUFG |                                   | btnR_IBUF                                |                2 |              3 |
+| ~clk_IBUF_BUFG |                                   |                                          |                3 |              3 |
+|  clk_IBUF_BUFG | Reaction_game/msSum0              |                                          |                2 |              6 |
+|  clk_IBUF_BUFG | Reaction_game/leds[15]_i_1_n_0    | Reaction_game/leds[15]_i_3_n_0           |                2 |              6 |
+|  clk_IBUF_BUFG | VGACore/y_counter0                | VGACore/y_counter[8]_i_1_n_0             |                3 |              9 |
+|  clk_IBUF_BUFG |                                   |                                          |                6 |             10 |
+|  clk_IBUF_BUFG | VGACore/eqOp                      | btnR_IBUF                                |                4 |             10 |
+|  clk_IBUF_BUFG | VGACore/x_counter0                | VGACore/x_counter[9]_i_1_n_0             |                3 |             10 |
+|  clk_IBUF_BUFG | VGACore/counter_v0                | btnR_IBUF                                |                4 |             10 |
+|  clk_IBUF_BUFG | Reaction_game/CompareCounter0_0   | Reaction_game/CompareCounter[12]_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG | Reaction_game/Counter0            |                                          |                5 |             13 |
+|  clk_IBUF_BUFG | Reaction_game/Hex0                | Reaction_game/Hex[13]_i_1_n_0            |               11 |             13 |
+|  clk_IBUF_BUFG | Reaction_game/msCount[13]_i_2_n_0 | Reaction_game/msCount[13]_i_1_n_0        |                2 |             13 |
+|  en1_BUFG      |                                   |                                          |               10 |             16 |
+| ~clk_IBUF_BUFG | en1_BUFG                          | Reaction_game/Scale_Counter[14]_i_1_n_0  |                4 |             16 |
+|  clk_IBUF_BUFG |                                   | Display/sel                              |                5 |             17 |
+|  clk_IBUF_BUFG | Reaction_game/msSum0              | Reaction_game/runs[0]_i_1_n_0            |               14 |             18 |
++----------------+-----------------------------------+------------------------------------------+------------------+----------------+
+
+

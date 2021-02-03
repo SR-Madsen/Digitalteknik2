@@ -1,0 +1,19 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim/TB_Blink_Blank_Logic_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Bcd59_Counter_binaryversion'
+INFO: [VRFC 10-3107] analyzing entity 'Bcd59_Counter_twodigitbcdversion'
+INFO: [VRFC 10-3107] analyzing entity '\Bcd59_Counter_twodigitbcdversion__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity '\Bcd59_Counter_twodigitbcdversion__parameterized0_1\'
+INFO: [VRFC 10-3107] analyzing entity 'Lap_Time_Latch'
+INFO: [VRFC 10-3107] analyzing entity 'MuxDisplay'
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_2'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_3'
+INFO: [VRFC 10-3107] analyzing entity 'Button_pulse'
+INFO: [VRFC 10-3107] analyzing entity 'Button_toggle'
+INFO: [VRFC 10-3107] analyzing entity 'Button_toggle_0'
+INFO: [VRFC 10-3107] analyzing entity 'Watch_baseret_paa_bcd59'
+INFO: [VRFC 10-3107] analyzing entity 'TopLevel_StopWatch_v1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.srcs/sources_1/new/Blink_Blank_Logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Blink_Blank_Logic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.srcs/sim_1/new/TB_Blink_Blank_Logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_Blink_Blank_Logic'

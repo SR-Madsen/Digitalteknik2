@@ -1,0 +1,7 @@
+Running: xsim.dir/TB_Blink_Blank_Logic_behav/xsimk.exe -simmode gui -wdb TB_Blink_Blank_Logic_behav.wdb -simrunnum 0 -socket 51380
+Design successfully loaded
+Design Loading Memory Usage: 4980 KB (Peak: 4980 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 5596 KB (Peak: 5596 KB)
+Simulation CPU Usage: 15 ms

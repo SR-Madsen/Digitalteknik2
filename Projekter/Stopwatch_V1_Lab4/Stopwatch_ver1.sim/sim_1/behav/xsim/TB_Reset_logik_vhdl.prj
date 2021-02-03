@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Stopwatch_ver1.srcs/sources_1/new/Reset_logik.vhd" \
+"../../../../Stopwatch_ver1.srcs/sim_1/new/TB_Reset_logik.vhd" \
+
+# Do not sort compile order
+nosort

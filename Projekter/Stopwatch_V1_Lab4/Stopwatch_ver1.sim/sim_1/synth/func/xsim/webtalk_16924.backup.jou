@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar  6 20:20:14 2019
+# Process ID: 16924
+# Current directory: C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim/xsim.dir/TB_Blink_Blank_Logic_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/XUP/Lek_5/Stopwatch_ver1/Stopwatch_ver1.sim/sim_1/synth/func/xsim/xsim.dir/TB_Blink_Blank_Logic_func_synth/webtalk/xsim_webtalk.tcl -notrace

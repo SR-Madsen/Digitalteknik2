@@ -1,0 +1,103 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Nov  6 11:15:41 2019
+| Host         : Sebastian-uni running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ScopeDesign_wrapper_control_sets_placed.rpt
+| Design       : ScopeDesign_wrapper
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   109 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           23 |
+| No           | No                    | Yes                    |               3 |            2 |
+| No           | Yes                   | No                     |              46 |           17 |
+| Yes          | No                    | No                     |              45 |           15 |
+| Yes          | No                    | Yes                    |              20 |            7 |
+| Yes          | Yes                   | No                     |             187 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                         Enable Signal                        |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                              | btnC_IBUF                                         |                2 |              3 |
+|  clk_IBUF_BUFG | ScopeDesign_i/ADC_interface_0/U0/Count[4]_i_1_n_0            |                                                   |                1 |              4 |
+|  clk_IBUF_BUFG | ScopeDesign_i/ADC_interface_0/U0/Count[4]_i_1_n_0            | ScopeDesign_i/ADC_interface_0/U0/Temp1[7]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn00                         | ScopeDesign_i/RotaryModule_0/U0/Kn0[3]_i_1_n_0    |                1 |              4 |
+|  clk_IBUF_BUFG | ScopeDesign_i/ADC_interface_0/U0/FSM_onehot_State[4]_i_1_n_0 |                                                   |                2 |              5 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn00                         | ScopeDesign_i/RotaryModule_0/U0/Kn0[10]_i_1_n_0   |                1 |              5 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn10                         | ScopeDesign_i/RotaryModule_0/U0/Kn1[10]_i_1_n_0   |                2 |              6 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn20                         | ScopeDesign_i/RotaryModule_0/U0/Kn2[12]_i_1_n_0   |                1 |              6 |
+|  clk_IBUF_BUFG | ScopeDesign_i/ADC_interface_0/U0/Count[4]_i_1_n_0            | ScopeDesign_i/ADC_interface_0/U0/Count[0]_i_1_n_0 |                2 |              9 |
+|  clk_IBUF_BUFG | ScopeDesign_i/VGA_Core2_0/U0/y_counter0                      | ScopeDesign_i/VGA_Core2_0/U0/y_counter[8]_i_1_n_0 |                2 |              9 |
+|  clk_IBUF_BUFG | ScopeDesign_i/VGA_Core2_0/U0/counter_v0                      | btnC_IBUF                                         |                3 |             10 |
+|  clk_IBUF_BUFG | ScopeDesign_i/VGA_Core2_0/U0/x_counter0                      | ScopeDesign_i/VGA_Core2_0/U0/x_counter[9]_i_1_n_0 |                3 |             10 |
+|  clk_IBUF_BUFG | ScopeDesign_i/VGA_Core2_0/U0/eqOp                            | btnC_IBUF                                         |                4 |             10 |
+|  clk_IBUF_BUFG | ScopeDesign_i/ADC_interface_0/U0/AD1[11]_i_1_n_0             |                                                   |                3 |             12 |
+|  clk_IBUF_BUFG | ScopeDesign_i/MuxDisplay_0/U0/Clk_1kHz_i_1_n_0               |                                                   |                3 |             12 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Puls_1ms                     |                                                   |                6 |             12 |
+| ~clk_IBUF_BUFG |                                                              | ScopeDesign_i/VGA_Core2_0/U0/BLANK                |                7 |             12 |
+|  clk_IBUF_BUFG |                                                              | ScopeDesign_i/MuxDisplay_0/U0/Clk_1kHz_i_1_n_0    |                5 |             17 |
+|  clk_IBUF_BUFG |                                                              | ScopeDesign_i/RotaryModule_0/U0/clear             |                5 |             17 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn00                         | ScopeDesign_i/RotaryModule_0/U0/Kn0[15]_i_1_n_0   |                4 |             22 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn10                         | ScopeDesign_i/RotaryModule_0/U0/Kn1[15]_i_1_n_0   |                8 |             25 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn20                         | ScopeDesign_i/RotaryModule_0/U0/Kn2[15]_i_1_n_0   |                7 |             25 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Kn30                         | ScopeDesign_i/RotaryModule_0/U0/Kn3[15]_i_1_n_0   |                8 |             31 |
+|  clk_IBUF_BUFG | ScopeDesign_i/RotaryModule_0/U0/Puls_1ms                     | ScopeDesign_i/RotaryModule_0/U0/Messure_time0     |                8 |             31 |
+|  clk_IBUF_BUFG |                                                              |                                                   |               23 |             54 |
++----------------+--------------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,452 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 18 09:52:24 2019
+# Process ID: 5860
+# Current directory: C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.runs/synth_1
+# Command line: vivado.exe -log MuxDisplay_StartHelp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MuxDisplay_StartHelp.tcl
+# Log file: C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.runs/synth_1/MuxDisplay_StartHelp.vds
+# Journal file: C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MuxDisplay_StartHelp.tcl -notrace
+Command: synth_design -top MuxDisplay_StartHelp -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3968 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 674.852 ; gain = 178.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MuxDisplay_StartHelp' [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/Lektion 2/MuxDisplay_StartHelp.vhd:16]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Hex27Segment' declared at 'C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/new/Hex27Segment.vhd:34' bound to instance 'U1' of component 'Hex27Segment' [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/Lektion 2/MuxDisplay_StartHelp.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'Hex27Segment' [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/new/Hex27Segment.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Hex27Segment' (1#1) [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/new/Hex27Segment.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element Scalecnt_reg was removed.  [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/Lektion 2/MuxDisplay_StartHelp.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'MuxDisplay_StartHelp' (2#1) [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/sources_1/imports/Lektion 2/MuxDisplay_StartHelp.vhd:16]
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[8] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 738.398 ; gain = 241.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 738.398 ; gain = 241.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 738.398 ; gain = 241.758
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.srcs/constrs_1/imports/Basys 3 kit/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 815.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 820.105 ; gain = 4.980
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 820.105 ; gain = 323.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 820.105 ; gain = 323.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 820.105 ; gain = 323.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 820.105 ; gain = 323.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MuxDisplay_StartHelp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[1] driven by constant 1
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[2] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[3] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[4] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[5] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[6] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[7] driven by constant 0
+WARNING: [Synth 8-3917] design MuxDisplay_StartHelp has port Segm[8] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.105 ; gain = 323.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 830.801 ; gain = 334.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 830.801 ; gain = 334.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 840.832 ; gain = 344.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     2|
+|4     |LUT2   |     5|
+|5     |LUT3   |     1|
+|6     |LUT4   |    26|
+|7     |FDRE   |    28|
+|8     |FDSE   |     1|
+|9     |IBUF   |     3|
+|10    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    97|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 856.645 ; gain = 278.297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 856.645 ; gain = 360.004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 871.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 62 Warnings, 51 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 871.906 ; gain = 577.961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 871.906 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projekter/MuxDisplay_Lab2/MuxDisplay_Lab2.runs/synth_1/MuxDisplay_StartHelp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MuxDisplay_StartHelp_utilization_synth.rpt -pb MuxDisplay_StartHelp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 09:53:04 2019...

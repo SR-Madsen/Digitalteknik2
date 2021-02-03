@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 30 10:58:53 2019
+# Process ID: 14612
+# Current directory: C:/Xilinx/Projekter/RotaryModule_Lab8b/RotaryModule_Lab8b.runs/synth_1
+# Command line: vivado.exe -log Top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_level.tcl
+# Log file: C:/Xilinx/Projekter/RotaryModule_Lab8b/RotaryModule_Lab8b.runs/synth_1/Top_level.vds
+# Journal file: C:/Xilinx/Projekter/RotaryModule_Lab8b/RotaryModule_Lab8b.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_level.tcl -notrace

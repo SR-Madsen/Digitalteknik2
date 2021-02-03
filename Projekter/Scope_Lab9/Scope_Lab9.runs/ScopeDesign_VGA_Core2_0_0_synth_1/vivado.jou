@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  6 09:23:46 2019
+# Process ID: 11644
+# Current directory: C:/Xilinx/Projekter/Scope_Lab9/Scope_Lab9.runs/ScopeDesign_VGA_Core2_0_0_synth_1
+# Command line: vivado.exe -log ScopeDesign_VGA_Core2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ScopeDesign_VGA_Core2_0_0.tcl
+# Log file: C:/Xilinx/Projekter/Scope_Lab9/Scope_Lab9.runs/ScopeDesign_VGA_Core2_0_0_synth_1/ScopeDesign_VGA_Core2_0_0.vds
+# Journal file: C:/Xilinx/Projekter/Scope_Lab9/Scope_Lab9.runs/ScopeDesign_VGA_Core2_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ScopeDesign_VGA_Core2_0_0.tcl -notrace

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 10 14:01:47 2019" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="MegaMux" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="1" NAME="D_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux1x2_0" PORT="D"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="D_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux1x2_2" PORT="D"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux1x2_0" PORT="S"/>
+        <CONNECTION INSTANCE="Mux1x2_2" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y_0" SIGIS="undef" SIGNAME="Mux1x2_1_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux1x2_1" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_1" SIGIS="undef" SIGNAME="External_Ports_S_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux1x2_1" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Mux1x2_0" HWVERSION="1.0" INSTANCE="Mux1x2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux1x2" VLNV="xilinx.com:module_ref:Mux1x2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MegaMux_Mux1x2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="D_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="Mux1x2_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Mux1x2_1" HWVERSION="1.0" INSTANCE="Mux1x2_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux1x2" VLNV="xilinx.com:module_ref:Mux1x2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MegaMux_Mux1x2_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="Mux1x2_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Mux1x2_2" HWVERSION="1.0" INSTANCE="Mux1x2_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux1x2" VLNV="xilinx.com:module_ref:Mux1x2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MegaMux_Mux1x2_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_D_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="D_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="Mux1x2_2_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="MegaMux_xlconcat_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="Mux1x2_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux1x2_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="Mux1x2_2_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux1x2_2" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux1x2_1" PORT="D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

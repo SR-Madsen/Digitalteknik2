@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 18 10:51:39 2019
+# Process ID: 15280
+# Current directory: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1
+# Command line: vivado.exe -log Hex27Segment.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Hex27Segment.tcl -notrace
+# Log file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1/Hex27Segment.vdi
+# Journal file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Hex27Segment.tcl -notrace

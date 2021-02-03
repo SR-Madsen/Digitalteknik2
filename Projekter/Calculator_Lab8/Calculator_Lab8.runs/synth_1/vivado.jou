@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 30 09:57:31 2019
+# Process ID: 14416
+# Current directory: C:/Xilinx/Projekter/Calculator_Lab8/Calculator_Lab8.runs/synth_1
+# Command line: vivado.exe -log Calculator_toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Calculator_toplevel.tcl
+# Log file: C:/Xilinx/Projekter/Calculator_Lab8/Calculator_Lab8.runs/synth_1/Calculator_toplevel.vds
+# Journal file: C:/Xilinx/Projekter/Calculator_Lab8/Calculator_Lab8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Calculator_toplevel.tcl -notrace

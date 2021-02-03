@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 18 11:06:28 2019
+# Process ID: 13560
+# Current directory: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1
+# Command line: vivado.exe -log MuxDisplay_V3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MuxDisplay_V3.tcl -notrace
+# Log file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1/MuxDisplay_V3.vdi
+# Journal file: C:/Xilinx/Projekter/MuxDisplay_Lab2_2/MuxDisplay_Lab2_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MuxDisplay_V3.tcl -notrace

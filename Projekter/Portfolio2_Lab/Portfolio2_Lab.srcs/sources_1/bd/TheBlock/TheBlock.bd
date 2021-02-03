@@ -1,0 +1,732 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "name": "TheBlock",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "MuxDisplay_0": "",
+      "Enabler_0": "",
+      "LEDMux_0": "",
+      "HexMux_0": "",
+      "Reactions_0": "",
+      "xlconcat_0": "",
+      "DirectionReaction_0": "",
+      "blk_mem_gen_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "VGA_Core2_0": "",
+      "VGA_Top_0": "",
+      "VGA_Driver_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "btnL": {
+        "direction": "I"
+      },
+      "btnR": {
+        "direction": "I"
+      },
+      "btnC": {
+        "direction": "I"
+      },
+      "btnD": {
+        "direction": "I"
+      },
+      "btnU": {
+        "direction": "I"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "seg": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "dp": {
+        "direction": "O"
+      },
+      "led": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "vga": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      }
+    },
+    "components": {
+      "MuxDisplay_0": {
+        "vlnv": "xilinx.com:module_ref:MuxDisplay:1.0",
+        "xci_name": "TheBlock_MuxDisplay_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MuxDisplay",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Clk_100MHz": {
+            "direction": "I"
+          },
+          "HexCifre": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dpoints": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Clk_1kHz": {
+            "direction": "O"
+          },
+          "Clk_1Hz": {
+            "direction": "O"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "seg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "dp": {
+            "direction": "O"
+          }
+        }
+      },
+      "Enabler_0": {
+        "vlnv": "xilinx.com:module_ref:Enabler:1.0",
+        "xci_name": "TheBlock_Enabler_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Enabler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "switches": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "en1": {
+            "direction": "O"
+          },
+          "en2": {
+            "direction": "O"
+          }
+        }
+      },
+      "LEDMux_0": {
+        "vlnv": "xilinx.com:module_ref:LEDMux:1.0",
+        "xci_name": "TheBlock_LEDMux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "LEDMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "leds1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "leds2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "en1": {
+            "direction": "I"
+          },
+          "en2": {
+            "direction": "I"
+          },
+          "ledout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "HexMux_0": {
+        "vlnv": "xilinx.com:module_ref:HexMux:1.0",
+        "xci_name": "TheBlock_HexMux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "HexMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en1": {
+            "direction": "I"
+          },
+          "en2": {
+            "direction": "I"
+          },
+          "Hex1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "Hex2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dpoints1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "dpoints2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "dpoints": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "HexOut": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Reactions_0": {
+        "vlnv": "xilinx.com:module_ref:Reactions:1.0",
+        "xci_name": "TheBlock_Reactions_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reactions",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en": {
+            "direction": "I"
+          },
+          "Clk_100MHz": {
+            "direction": "I"
+          },
+          "btnpress": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Hex": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "dpoints": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "leds": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TheBlock_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      },
+      "DirectionReaction_0": {
+        "vlnv": "xilinx.com:module_ref:DirectionReaction:1.0",
+        "xci_name": "TheBlock_DirectionReaction_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DirectionReaction",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en": {
+            "direction": "I"
+          },
+          "Clk_100MHz": {
+            "direction": "I"
+          },
+          "btnpress": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Hex": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "dpoints": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blanks": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "leds": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "TheBlock_blk_mem_gen_0_0",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "false"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "Simple_Dual_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Port_A_Write_Rate": {
+            "value": "50"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Read_Width_B": {
+            "value": "16"
+          },
+          "Register_PortB_Output_of_Memory_Core": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTB_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "8"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "Write_Width_B": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "TheBlock_xlconstant_0_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "TheBlock_xlconstant_0_1",
+        "parameters": {
+          "CONST_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "VGA_Core2_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_Core2:1.0",
+        "xci_name": "TheBlock_VGA_Core2_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_Core2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "CLEAR": {
+            "direction": "I"
+          },
+          "LINEx": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "PIXEL": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "HSYNCH": {
+            "direction": "O"
+          },
+          "VSYNCH": {
+            "direction": "O"
+          },
+          "BLANK": {
+            "direction": "O"
+          }
+        }
+      },
+      "VGA_Top_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_Top:1.0",
+        "xci_name": "TheBlock_VGA_Top_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_Top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RGB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "Hsync": {
+            "direction": "I"
+          },
+          "Vsync": {
+            "direction": "I"
+          },
+          "Blank": {
+            "direction": "I"
+          },
+          "VGA": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "VGA_Driver_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_Driver:1.0",
+        "xci_name": "TheBlock_VGA_Driver_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_Driver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Blank": {
+            "direction": "I"
+          },
+          "Lines": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "Pixel": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "RGB": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sw_0_1": {
+        "ports": [
+          "sw",
+          "Enabler_0/switches"
+        ]
+      },
+      "Enabler_0_en1": {
+        "ports": [
+          "Enabler_0/en1",
+          "Reactions_0/en",
+          "LEDMux_0/en1",
+          "HexMux_0/en1"
+        ]
+      },
+      "Reactions_0_leds": {
+        "ports": [
+          "Reactions_0/leds",
+          "LEDMux_0/leds1"
+        ]
+      },
+      "Enabler_0_en2": {
+        "ports": [
+          "Enabler_0/en2",
+          "LEDMux_0/en2",
+          "HexMux_0/en2",
+          "DirectionReaction_0/en"
+        ]
+      },
+      "Reactions_0_blanks": {
+        "ports": [
+          "Reactions_0/blanks",
+          "HexMux_0/blanks1"
+        ]
+      },
+      "Reactions_0_dpoints": {
+        "ports": [
+          "Reactions_0/dpoints",
+          "HexMux_0/dpoints1"
+        ]
+      },
+      "Reactions_0_Hex": {
+        "ports": [
+          "Reactions_0/Hex",
+          "HexMux_0/Hex1"
+        ]
+      },
+      "HexMux_0_HexOut": {
+        "ports": [
+          "HexMux_0/HexOut",
+          "MuxDisplay_0/HexCifre",
+          "blk_mem_gen_0/dina"
+        ]
+      },
+      "HexMux_0_dpoints": {
+        "ports": [
+          "HexMux_0/dpoints",
+          "MuxDisplay_0/dpoints"
+        ]
+      },
+      "HexMux_0_blanks": {
+        "ports": [
+          "HexMux_0/blanks",
+          "MuxDisplay_0/blanks"
+        ]
+      },
+      "MuxDisplay_0_an": {
+        "ports": [
+          "MuxDisplay_0/an",
+          "an"
+        ]
+      },
+      "MuxDisplay_0_seg": {
+        "ports": [
+          "MuxDisplay_0/seg",
+          "seg"
+        ]
+      },
+      "MuxDisplay_0_dp": {
+        "ports": [
+          "MuxDisplay_0/dp",
+          "dp"
+        ]
+      },
+      "LEDMux_0_ledout": {
+        "ports": [
+          "LEDMux_0/ledout",
+          "led"
+        ]
+      },
+      "btnL_1": {
+        "ports": [
+          "btnL",
+          "xlconcat_0/In0"
+        ]
+      },
+      "btnU_1": {
+        "ports": [
+          "btnU",
+          "xlconcat_0/In1"
+        ]
+      },
+      "btnR_1": {
+        "ports": [
+          "btnR",
+          "xlconcat_0/In2",
+          "VGA_Core2_0/CLEAR"
+        ]
+      },
+      "btnD_1": {
+        "ports": [
+          "btnD",
+          "xlconcat_0/In3"
+        ]
+      },
+      "btnC_1": {
+        "ports": [
+          "btnC",
+          "xlconcat_0/In4"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "Reactions_0/btnpress",
+          "DirectionReaction_0/btnpress"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "MuxDisplay_0/Clk_100MHz",
+          "Reactions_0/Clk_100MHz",
+          "DirectionReaction_0/Clk_100MHz",
+          "VGA_Core2_0/CLK",
+          "VGA_Driver_0/clk"
+        ]
+      },
+      "DirectionReaction_0_Hex": {
+        "ports": [
+          "DirectionReaction_0/Hex",
+          "HexMux_0/Hex2"
+        ]
+      },
+      "DirectionReaction_0_dpoints": {
+        "ports": [
+          "DirectionReaction_0/dpoints",
+          "HexMux_0/dpoints2"
+        ]
+      },
+      "DirectionReaction_0_blanks": {
+        "ports": [
+          "DirectionReaction_0/blanks",
+          "HexMux_0/blanks2"
+        ]
+      },
+      "DirectionReaction_0_leds": {
+        "ports": [
+          "DirectionReaction_0/leds",
+          "LEDMux_0/leds2"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "blk_mem_gen_0/clkb",
+          "blk_mem_gen_0/clka"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "blk_mem_gen_0/wea"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "blk_mem_gen_0/addra",
+          "blk_mem_gen_0/addrb"
+        ]
+      },
+      "VGA_Core2_0_VSYNCH": {
+        "ports": [
+          "VGA_Core2_0/VSYNCH",
+          "VGA_Top_0/Vsync"
+        ]
+      },
+      "VGA_Core2_0_BLANK": {
+        "ports": [
+          "VGA_Core2_0/BLANK",
+          "VGA_Top_0/Blank",
+          "VGA_Driver_0/Blank"
+        ]
+      },
+      "VGA_Driver_0_RGB": {
+        "ports": [
+          "VGA_Driver_0/RGB",
+          "VGA_Top_0/RGB"
+        ]
+      },
+      "VGA_Top_0_VGA": {
+        "ports": [
+          "VGA_Top_0/VGA",
+          "vga"
+        ]
+      },
+      "VGA_Core2_0_LINEx": {
+        "ports": [
+          "VGA_Core2_0/LINEx",
+          "VGA_Driver_0/Lines"
+        ]
+      },
+      "VGA_Core2_0_PIXEL": {
+        "ports": [
+          "VGA_Core2_0/PIXEL",
+          "VGA_Driver_0/Pixel"
+        ]
+      },
+      "VGA_Core2_0_HSYNCH": {
+        "ports": [
+          "VGA_Core2_0/HSYNCH",
+          "VGA_Top_0/Hsync"
+        ]
+      }
+    }
+  }
+}
